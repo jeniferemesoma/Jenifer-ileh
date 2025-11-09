@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Mood Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            transition: 0.4s;
+        }
+
+        #greeting {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #moodBox {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 20px auto;
+            transition: 0.3s;
+        }
+
+        #secretMessage {
+            display: none;
+            margin-top: 20px;
+            font-style: italic;
+            color: purple;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌤 Personal Mood Dashboard 🌙</h1>
+
+    <!-- Name Greeting -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="greeting">Hello, friend!</p>
+
+    <!-- Mood Box Controls -->
+    <div id="moodBox"></div>
+    <button id="growBtn">Grow</button>
+    <button id="shrinkBtn">Shrink</button>
+
+    <br><br>
+
+    <!-- Day Night Toggle -->
+    <button id="toggleMode">Toggle Day/Night</button>
+
+    <br><br>
+
+    <!-- Secret Message Toggle -->
+    <button id="secretBtn">Show Secret</button>
+    <p id="secretMessage">🌟 You are doing great — keep going! 🌟</p>
+
+    <script src="main.js">main.ja</script>
+</body>
+</html>
